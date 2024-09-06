@@ -12,18 +12,20 @@ namespace Demo
             app.UseRouting();
             app.MapGet("/", () => "Hello World!");
 
+            #region Routing
             app.MapGet("/XX{id:int}", async context =>
-            {
+           {
 
 
-                await context.Response.WriteAsync($"Id = {context.Request.RouteValues["id"]}");
+               await context.Response.WriteAsync($"Id = {context.Request.RouteValues["id"]}");
 
 
 
-            });
+           });
             app.MapControllerRoute(
                 name: "default",
-                pattern:"{controller}/{action}/{id?}" );
+                pattern: "{controller}/{action}/{id?}"); 
+            #endregion
 
 
             app.Run();
