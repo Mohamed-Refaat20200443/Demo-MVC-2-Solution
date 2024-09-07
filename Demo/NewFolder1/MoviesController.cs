@@ -32,23 +32,60 @@ namespace Demo.NewFolder1
         //}
 
         [HttpGet] // GET: baseUrl/Movies/GetMovie/{id}
-        public IActionResult GetMovie(int id)
+        //public IActionResult GetMovie(int id)
+        //{
+        //    if (id == 0)
+        //    {
+        //        // return new BadRequestResult();
+        //        return BadRequest();
+        //    }
+
+        //    if (id == 100)
+        //    {
+        //        // return new NotFoundResult();
+        //        return NotFound();
+        //    }
+
+        //    // ContentResult result = new ContentResult();
+        //    return Content($"<h1> Movie with Id: {id} </h1>", "text/html");
+        //}
+
+        //public IActionResult GetMovie(int id, string name, Movie movie)
+        //{
+        //    if (id == 0)
+        //        return BadRequest();
+
+        //    if (id == 100)
+        //        return NotFound();
+
+        //    if (id == 200)
+        //        return Unauthorized();
+
+
+        //    return Content($"<h1> Movie with Id: {id} </h1>", "text/html");
+
+
+
+        //}
+
+        public IActionResult GetMovie(int id, string name, int[] Arr )
         {
             if (id == 0)
-            {
-                // return new BadRequestResult();
                 return BadRequest();
-            }
 
             if (id == 100)
-            {
-                // return new NotFoundResult();
                 return NotFound();
-            }
 
-            // ContentResult result = new ContentResult();
+            if (id == 200)
+                return Unauthorized();
+
+
             return Content($"<h1> Movie with Id: {id} </h1>", "text/html");
+
+
+
         }
+
 
 
 
