@@ -10,5 +10,9 @@ namespace Demo.NewFolder1
             //return View( new Employee);
             //return View("Index");
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }
