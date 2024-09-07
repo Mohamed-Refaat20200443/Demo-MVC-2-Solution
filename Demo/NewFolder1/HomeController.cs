@@ -14,5 +14,17 @@ namespace Demo.NewFolder1
         {
             return View();
         }
+
+     
+            public IActionResult ContactUs()
+        {
+            return View();
+        }
+
+       
+         public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }

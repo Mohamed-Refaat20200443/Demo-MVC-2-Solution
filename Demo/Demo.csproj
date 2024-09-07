@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="NewFolder1\NewFolder\" />
     <Folder Include="Views\NewFolder\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
