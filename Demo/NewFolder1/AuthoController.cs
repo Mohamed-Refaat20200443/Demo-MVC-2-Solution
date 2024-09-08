@@ -2,7 +2,7 @@
 
 namespace Demo.NewFolder1
 {
-    public class AuthoController1 : Controller
+    public class AuthoController : Controller
     {
         public IActionResult Index()
         {

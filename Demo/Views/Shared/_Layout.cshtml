@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
 
 <html>
 
@@ -18,9 +19,20 @@
 
             <nav>
                 <a href="/Home/Index" class=" btn btn-primary">Home</a>
+              @*   Html Helper
+                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-primary" }) *@
+
+                @* Tag helper *@
+              @*   <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a> *@
                 <a href="/Home/AboutUs" class=" btn btn-warning">About Us</a>
                 <a href="/Home/ContactUs" class=" btn btn-light">Contact Us</a>
                 <a href="/Home/Privacy" class=" btn btn-success">Privacy</a>
+                <a href="/Autho/Signup" class=" btn btn-info">Signup</a>
+                <a href="/Autho/Signin" class=" btn btn-danger">Signin</a>
+                
+
+
+                
 
             </nav>
 
